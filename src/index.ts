@@ -1,6 +1,7 @@
 
-function test(): void {
-	console.log('test')
-}
+const test = (): void => {
+	console.log('test');
+};
 
-test()
+test();
+export default test;
