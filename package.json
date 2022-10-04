@@ -1,0 +1,28 @@
+{
+  "name": "ft-common-util",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "author": "Fliptree",
+  "license": "ISC",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node build/index.js",
+    "deploy": "NODE_ENV=production node index.js",
+    "start:build": "node build/src/main.js",
+    "clean": "rimraf coverage build tmp",
+    "prebuild": "npm run lint",
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "build:release": "npm run clean && tsc -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts --ext .mts",
+    "test": "jest --coverage",
+    "prettier": "prettier --config .prettierrc --write .",
+    "test:watch": "jest --watch",
+    "start:debug:brk": "node --inspect-brk index.js",
+    "start:debug:ts": "node --inspect --require ts-node/register src/index.ts",
+    "start:debug:ts:brk": "node --inspect-brk --require ts-node/register src/index.ts --require dotenv/config dotenv_config_path=.env.development"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
