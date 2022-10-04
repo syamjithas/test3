@@ -2,10 +2,11 @@
   "name": "ft-common-util",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
   "author": "Fliptree",
   "license": "ISC",
   "type": "commonjs",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "start": "node build/index.js",
     "deploy": "NODE_ENV=production node index.js",
