@@ -23,6 +23,11 @@
     "start:debug:ts": "node --inspect --require ts-node/register src/index.ts",
     "start:debug:ts:brk": "node --inspect-brk --require ts-node/register src/index.ts --require dotenv/config dotenv_config_path=.env.development"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^18.8.1",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.24.0",
+    "typescript": "^4.8.4"
+  }
 }
